@@ -20,14 +20,3 @@ let getInfo = async(direccion) => {
 getInfo(argv.direccion)
     .then(mensaje => console.log(mensaje))
     .catch(e => console.log(e));
-
-// rp(options)
-//     .then(resp => {
-//         // console.log(JSON.stringify(resp.results, undefined, 2));
-//         let location = resp.results[0].geometry.location;
-//         let formatted_address = resp.results[0].formatted_address;
-//         console.log(`Direccion: ${ formatted_address}`);
-//         console.log(`lat: ${ location.lat }`);
-//         console.log(`long: ${ location.lng }`);
-//     })
-//     .catch(e => console.log('ERROR!', e));
